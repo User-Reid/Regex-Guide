@@ -58,11 +58,30 @@ Flags modify the behavior of the regex, but this pattern does not use any flags.
 
 ### Grouping and Capturing
 
+Grouping allows for parts of the regex to be treated as a single unit:
+
+`()`: Parentheses are used for grouping, which allows quantifiers to apply to the entire group. In our email regex, there’s no explicit use of grouping, but it’s commonly used in more complex patterns.
+
 ### Bracket Expressions
+
+Bracket expressions allow for a choice between several characters:
+
+`[a-zA-Z0-9._%+-]`: This expression allows any single character within the brackets to match. It’s a way to define a set of possible characters.
 
 ### Greedy and Lazy Match
 
+By default, quantifiers in regex are greedy, meaning they match as much as possible:
+
+Greedy Match: `+` is a greedy quantifier in our pattern, matching as many characters as possible.
+Lazy Match: You can make quantifiers lazy by adding a `?`, which makes them match as few characters as possible.
+
 ### Boundaries
+
+Boundaries assert positions within a word:
+
+`\b`: Asserts a word boundary position.
+`\B`: Asserts a non-word boundary position.
+This regex pattern doesn’t use boundaries, but they are crucial in more complex patterns.
 
 ### Back-references
 
