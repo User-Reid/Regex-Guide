@@ -85,8 +85,16 @@ This regex pattern doesn’t use boundaries, but they are crucial in more comple
 
 ### Back-references
 
+Back-references match the same text as previously matched by a capturing group. This pattern doesn’t use back-references, but they are useful for matching repeated substrings.
+
 ### Look-ahead and Look-behind
+
+Look-ahead and look-behind are used to assert that a match is followed or preceded by another string without including it in the match:
+
+Look-ahead: `(?=...)` asserts that what follows the current position matches the pattern inside the look-ahead.
+Look-behind: `(?<=...)` asserts that what precedes the current position matches the pattern inside the look-behind.
+These are advanced regex features and aren’t used in our simple email validation pattern.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was created by Reid Herrera, a web development student passionate about learning and sharing knowledge about coding. You can find more of my work and projects on my [GitHub](https://github.com/User-Reid) Profile.
